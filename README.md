@@ -4,7 +4,7 @@
 ---
 in python folder:
 
-wavPlots.py is for plotting wav samples just for fun
+wavPlots.py is for plotting wav samples just for fun <br />
 wavConverter.py is for converting wav sample to C array
 
 ---
