@@ -1,2 +1,6 @@
 build/*
 python/wav
+python/plots
+python/instr.mkd
+
+src/test/*
