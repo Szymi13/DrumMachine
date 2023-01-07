@@ -4,7 +4,7 @@
 ---
 in python folder:
 
-run wavPlots.py to plot waves of all samples from samples dir, saved in python/plots 
+run wavPlots.py to plot waves of all samples from samples dir, saved in python/plots <br /> 
 run wavConverter.py to convert all samples to binary 16 bit format, saved in src/samples_bin
 
 ---
