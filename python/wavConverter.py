@@ -12,4 +12,4 @@ for filename in os.listdir(dir):
     wavedata = wavefile.readframes(wavefile.getnframes())
     data = struct.unpack("<" + str(wavefile.getnframes()) + "h", wavedata)
     data_array = np.asarray(data)
-    data_array.astype('int16').tofile('../src/samples_bin/' + filename[0:2] + '_bin')
+    data_array.astype('int16').tofile('../src/samples_bin/' + filename[0:2] + '.bin')

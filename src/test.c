@@ -10,7 +10,7 @@ int main ()
 
     int16_t buffer[500] = {};
     
-    fp = fopen("./samples_bin/RS_bin", "rb");
+    fp = fopen("./samples_bin/RS.bin", "rb");
     fw = fopen("./for_testing.txt", "wb");
 
     fread(buffer, sizeof(int16_t), 500, fp);
