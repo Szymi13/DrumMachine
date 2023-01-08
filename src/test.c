@@ -1,30 +1,23 @@
 #include "stdio.h"
 #include <stdint.h>
+#include <stdlib.h>
 
-
+#define sampleSize 6000
 
 int main ()
 {
     FILE *fp;
     FILE *fw;
 
-    int16_t buffer[500] = {};
+    int16_t buffer[sampleSize] = {};
     
-    fp = fopen("./samples_bin/RS.bin", "rb");
+    fp = fopen("./samples_bin/MA.bin", "rb");
     fw = fopen("./for_testing.txt", "wb");
 
-    fread(buffer, sizeof(int16_t), 500, fp);
-    
-    char str[1000] = {};
-    int n = 0;
+    fread(buffer, sizeof(int16_t), sampleSize, fp);
 
-    for (int i = 0; i < 50; i++){
-        n += sprintf(&str[n], "%d", buffer[i]);
-    }
-    
-    //fwrite(str, sizeof(char), sizeof(str), fw);
-
-    fclose(fp);
+    fwrite(buffer, sizeof(int16_t), sampleSize, fw);
     fclose(fw);
+    fclose(fp);
     return 0;
 }
