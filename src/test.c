@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
 
@@ -11,7 +11,7 @@ int main ()
 
     int16_t buffer[sampleSize] = {};
     
-    fp = fopen("./samples_bin/MA.bin", "rb");
+    fp = fopen("./samples_bin/CH.bin", "rb");
     fw = fopen("./for_testing.txt", "wb");
 
     fread(buffer, sizeof(int16_t), sampleSize, fp);
