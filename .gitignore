@@ -1,8 +1,7 @@
 build/*
-python/wav
+python/wavenv
 python/plots
 python/instr.mkd
 
-src/test/*
 
 808 Modern Patterns_ Remaking famous Hip-Hop Drum Pattern on the Behringer RD-8.mp4
