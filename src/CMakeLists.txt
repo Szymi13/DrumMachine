@@ -1,8 +1,8 @@
 # only build I2S example if library is available
 if (TARGET pico_audio_i2s)
     add_executable(sine_wave_i2s
-            sine_wave.c
-            )
+            sine_wave_i2s.c    
+        )
 
     target_link_libraries(sine_wave_i2s PRIVATE
             pico_stdlib
