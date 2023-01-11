@@ -4,7 +4,7 @@ include(pico_sdk_import.cmake)
 
 include(pico_extras_import.cmake)
 
-project(pico_playground C CXX)
+project(DrumMachine C CXX)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 
