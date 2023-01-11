@@ -9,7 +9,7 @@ run wavConverter.py to convert all samples to binary 16 bit format, saved in src
 run testingCoutputs.py to plot binary file for_testing.txt
 
 ---
-test.c is template for reading samples from binary files and outputs as 16bit samples as strings to use in testingCoutputs, still needs work now it reads only one hardcoded sample
+test.c is a program to test reading binary samples from samples_bin
 
 ---
 all samples are 16bit 44.1kHz from <br /> 
