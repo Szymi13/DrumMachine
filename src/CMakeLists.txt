@@ -1,14 +1,16 @@
+
 add_executable(pico_drum_machine
     main.c
     )
 
-target_link_libraries(sine_wave_i2s PRIVATE
-    pico_stdlib
+#add_library(samples
+#    samples.c samples.h
+#    )
+
+target_link_libraries(pico_drum_machine PRIVATE 
+    pico_stdlib 
     pico_audio_i2s
+#    ${CMAKE_SOURCE_DIR}/src/samples.a
     )
 
-target_compile_definitions(sine_wave_i2s PRIVATE
-    PICO_AUDIO_I2S_MONO_INPUT=1
-    USE_AUDIO_I2S=1
-    )
-
+pico_add_extra_outputs(pico_drum_machine)
